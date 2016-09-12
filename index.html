@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+ <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+ <link href="/css/fonts.css" rel="stylesheet" type="text/css"/>
+ <link href="/css/layout.css" rel="stylesheet" type="text/css"/>
+ <link href="/css/overlay.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="Header">
+        <div class="container">
+            <div id="TopMenu">
+                <ul>
+                    <li class="active" ion="ajax=/ion.js.html;html=#WorkSpace;">ion.js</li>
+                    <li ion="ajax=/about.html;html=#WorkSpace;">О проекте</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="WorkSpace"></div>
+    </div>
+<!-- Bootstrap Modal -->
+    <div class="modal fade" id="ModalWin" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/ion.js" type="text/javascript"></script>
+    <script src="/js/js.js" type="text/javascript"></script>
+</body>
 </html>
