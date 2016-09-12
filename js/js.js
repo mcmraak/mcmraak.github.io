@@ -5,7 +5,7 @@ $(window).load(function () {
 var ion = new Ion();
 
 /* Ajax commands */
-$(document).on('mousedown', '[ion]', function ()
+$(document).on('click', '[ion]', function ()
 {
     ion.cmd($(this).attr('ion'));
 });
