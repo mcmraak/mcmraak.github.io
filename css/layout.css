@@ -13,7 +13,7 @@ body {
     margin-bottom: 100px;
 }
 
- Transition effects for base blocks 
+/* Transition effects for base blocks 
 body>div,
 body>div>div
 {
@@ -22,7 +22,7 @@ body>div>div
     -ms-transform: 1s;
     -webkit-transition: 1s;
     -o-transition: 1s;
-}
+}*/
 
 footer {
     position: absolute;

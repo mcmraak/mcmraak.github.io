@@ -1,17 +1,20 @@
 $(window).load(function () {
-    ion.cmd('data=#Ion;html=#WorkSpace;debug=true;');
+    var hash = window.location.hash;
+    if (hash) {
+        page(hash);
+    } else {
+        page('#ion');
+    }
 });
 
-var ion = new Ion();
-
-/* Ajax commands */
-$(document).on('click', '[ion]', function ()
-{
-    ion.cmd($(this).attr('ion'));
-});
+function page(hash) {
+    $('#WorkSpace').html($(hash).html()).hide().fadeIn(300);
+    $('#TopMenu li').removeClass('active');
+    $('#TopMenu li[hash=' + hash + ']').addClass('active');
+    window.location.hash = hash;
+}
 
 $(document).on('click', '#TopMenu li', function ()
 {
-    $('#TopMenu li').removeClass('active');
-    $(this).addClass('active');
+    page($(this).attr('hash'));
 });
