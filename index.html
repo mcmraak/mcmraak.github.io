@@ -13,8 +13,8 @@
         <div class="container">
             <div id="TopMenu">
                 <ul>
-                    <li class="active" ion="ajax=/ion.js.html;html=#WorkSpace;">ion.js</li>
-                    <li ion="ajax=/about.html;html=#WorkSpace;">О проекте</li>
+                    <li class="active" ion="data=#Ion;html=#WorkSpace;debug=true;">ion.js</li>
+                    <li ion="data=#About;html=#WorkSpace;debug=true;">О проекте</li>
                 </ul>
             </div>
         </div>
@@ -33,5 +33,16 @@
     <script src="/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/js/ion.js" type="text/javascript"></script>
     <script src="/js/js.js" type="text/javascript"></script>
+    
+    <div style="display:none;">
+        <div id="Ion">
+            <h1>Что такое ion</h1>
+            тут про ион
+        </div>
+        <div id="About">
+            Тут рассказывается о проекте
+        </div>
+    </div>
+    
 </body>
 </html>

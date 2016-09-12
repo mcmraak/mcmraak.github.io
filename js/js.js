@@ -1,5 +1,5 @@
 $(window).load(function () {
-    ion.cmd('ajax=/ion.js.html;html=#WorkSpace;');
+    ion.cmd('data=#Ion;html=#WorkSpace;debug=true;');
 });
 
 var ion = new Ion();
